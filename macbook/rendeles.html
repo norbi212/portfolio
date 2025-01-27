@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/alap.css">
+    <link rel="stylesheet" href="css/rendeles.css">
+    <title>Rendelés</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="fooldal.html">Macbook Pro</a></div>
+            <ul class="links">
+                <li><a href="kijelzo.html">Kijelző</a></li>
+                <li><a href="egyutt.html">Együttműködés</a></li>
+                <li><a href="spec.html">Technikai Adatok</a></li>
+            </ul>
+            <!--<a href="rendeles.html" class="action-btn">Rendelés</a>-->
+            <button onclick="hideShow()" class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="drpd" id="drpd">
+            <li><a href="kijelzo.html">Kijelző</a></li>
+            <li><a href="egyutt.html">Együttműködés</a></li>
+            <li><a href="spec.html">Technikai Adatok</a></li>
+            <!--<li><a href="rendeles.html" class="action-btn">Rendelés</a></li>-->
+        </div>
+    </header>
+    <!--Innentől az oldal-->
+    <main>
+       <hr class="nav-hr">
+       <h1>Válaszd ki új MacBook Pro <br>laptopodat.</h1>
+       <h2>Állítsd össze saját elvárásaidhoz</h2>
+       <p id="vegosszeg">Fizetendő összeg: 600 000 Ft</p>
+
+        <div class="atmero-align">
+            <div class="atmero">
+                <button id="col14" onclick="col14()">14 hüvelykes modell</button>
+                <button id="col16" onclick="col16()">16 hüvelykes modell</button>
+            </div>
+        </div>
+
+        <div class="hely-align">
+          <div class="memoria">
+            
+            <div class="memoriak">
+                <h3>Memória</h3>
+                <button id="ram8" onclick="ram8()"><b>8 GB egyesített memória</b></button>
+                <button id="ram16" onclick="ram16()"><b>16 GB egyesített memória</b> &emsp;&emsp;&emsp;&emsp; + 100 000 Ft</button>
+                <button id="ram32" onclick="ram32()"><b>32 GB egyesített memória</b> &emsp;&emsp;&emsp;&emsp; + 200 000 Ft</button>
+            </div>
+          </div>
+          <div class="tar">
+            <h3>Tárhely</h3>
+            <div class="tarak">
+                <button id="tar512" onclick="tar512()"><b>512 GB-os SSD-tároló</b></button>
+                <button id="tar1" onclick="tar1()"><b>1 TB-os SSD-tároló</b> &emsp;&emsp;&emsp;&emsp; + 100 000 Ft</button>
+                <button id="tar2" onclick="tar2()"><b>2 TB-os SSD-tároló</b> &emsp;&emsp;&emsp;&emsp; + 200 000 Ft</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="veg">
+            <button onclick="megvesz()">Vásárlás</button>
+        </div>
+
+    </main>
+    <!--JS-->
+    <script src="css/alap.js"></script>
+    <script src="css/rendeles.js"></script>
+</body>
+</html>

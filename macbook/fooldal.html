@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/alap.css">
+    <link rel="stylesheet" href="css/fooldal.css">
+    <title>Macbook Pro</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="fooldal.html">Macbook Pro</a></div>
+            <ul class="links">
+                <li><a href="kijelzo.html">Kijelző</a></li>
+                <li><a href="egyutt.html">Együttműködés</a></li>
+                <li><a href="spec.html">Technikai Adatok</a></li>
+            </ul>
+            <a href="rendeles.html" class="action-btn">Rendelés</a>
+            <button onclick="hideShow()" class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="drpd" id="drpd">
+            <li><a href="kijelzo.html">Kijelző</a></li>
+            <li><a href="egyutt.html">Együttműködés</a></li>
+            <li><a href="spec.html">Technikai Adatok</a></li>
+            <li><a href="rendeles.html" class="action-btn">Rendelés</a></li>
+        </div>
+    </header>
+    <div class="fejlec"></div>
+    <main>
+        <h1>apple macbook pro</h1>
+
+        <div class="chipek-fo felugro">
+            <h2>Egyedülálló teljesítmény</h2>
+            <p class="chipek-p">A MacBook Pro elképesztően hasít az M3, az M3 Pro és az M3 Max chipek­kel. Ezek a <b>három nanométeres technológiára</b> épülő, <b>vado­natúj GPU-architektúrával</b> működő chipek az eddigi legfejlettebbek az Apple számítógépek történetében. <b>Minden egyes chip még profibb teljesít­ménnyel és még komolyabb tudással bír.</b></p>
+            <div class="chipek­-align">            
+                <div class="chipek">
+                    <div class="box"><img src="img/m3.jpg" class="chip-i"></div>
+                    <div class="box"><img src="img/m3pro.jpg" class="chip-i"></div>
+                    <div class="box"><img src="img/m3max.jpg" class="chip-i"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grafika felugro">
+            <h2>A játék­szabályokat <br>újraíró grafikus <br>teljesítmény.</h2>
+            <div class="grafika-kepek">
+                <img src="img/performances.png">
+            </div>
+            
+            <hr>
+            <div class="grafika-text">
+                <p class="left">Ismerd meg a GPU-architek­túrák eddig nem látott, új osztályát. És <b>az eddigi legnagyobb áttörést az Apple chipek grafikai teljesít­ményében.</b> A chipre integrált, gyors memória használatát a Dynamic Caching optima­lizálja. Ezáltal hatalmas mértékben növekszik a GPU általános kihasználtsága, ami a profi appok és a legnagyobb grafikai igényű játékok <b>teljesít­ményében óriási ugrást jelent.</b></p>
+                <p class="right"><b>A játékok minden eddiginél részlet­gazdagabbak lesznek</b> a hardveres gyorsítású mesh shadinggel, háló­árnyékolással. Ezzel a technológiával na­gyobb tudású és hatékonyabb a geo­metria­feldolgozás, így <b>több összetett képi világú jelenet renderelhető a játékokban.</b></p>
+            </div>
+        </div>
+
+        <div class="kijelzo felugro">
+            <h2>Szemet gyönyör­ködtető XDR.</h2>
+            <div class="kijelzo-rendez">
+                <img src="img/kijelzo.png">
+                <p class="kijelzo-p">Az <b>extrém dinamika­tartomány (XDR)</b> kifino­multabb megvilágított pontokat, fantasztikusan részlet­gazdag árnyé­kokat és élénk, élethű színeket tesz lehetővé. Minden egyes Liquid Retina XDR‑kijelző gyárilag kalibrált, <b>ProMotion</b> technológiát használ, és <b>professzionális referencia­módokat</b> kínál.
+                <br><br><br>
+                <a href="kijelzo.html">További információk</a></p>
+            </div> 
+        </div>
+    </main>
+    <!--JS-->
+    <script src="css/alap.js"></script>
+    <script>
+        window.addEventListener('scroll', felugro);
+
+        function felugro(){
+            var felugrok=document.querySelectorAll('.felugro');
+            
+            for (var i = 0; i < felugrok.length; i++) {
+            
+                var magassag=window.innerHeight;
+                var felugrotop = felugrok[i].getBoundingClientRect().top;
+                var felugrop=150;
+
+                if(felugrotop<magassag-felugrop){
+                    felugrok[i].classList.add('active')
+                }
+                else{
+                    felugrok[i].classList.remove('active')
+                }
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

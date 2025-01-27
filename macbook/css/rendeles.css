@@ -1,0 +1,89 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.links{
+    margin-right: calc(10vw - 20px);
+    color: black;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+}
+.navbar a:hover{
+    color: #333;
+}
+.navbar .toggle-btn{
+    color: #000000;
+}
+/*oldal*/
+#vegosszeg{
+    position: absolute;
+    top: 60px;
+    right:  calc(10vw - 20px);
+}
+.nav-hr{
+    width: 90vw;
+    size: 0.5px;
+    color: #333;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+
+
+.atmero-align{
+    display: block; margin-left: auto; margin-right: auto; width: 400px;
+}
+.atmero button{width: 190px;}
+
+
+.hely-align{
+    display: block; margin-left: auto; margin-right: auto; width: 70vw;
+}
+.hely-align .memoriak{float: left; display: grid; width: 450px;}
+.hely-align .tar{float: right;  display: grid; width: 450px;}
+.memoriak button, .tarak button{width: 430px;margin-bottom: 20px; text-align: left; padding: 0 20px;}
+
+.veg button{
+    border: none;
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(70, 116, 161);
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    right:  calc(10vw - 20px);
+    bottom: 20px;
+    margin-top: 100px;}
+
+button{
+    background-color: #00000000;
+    border: #333 1px solid;
+    border-radius: 100px;
+    height: 60px;
+    font-size: 17px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+}
+h2{
+    text-align: center;
+    font-weight: lighter;
+}
+@media screen and (max-width: 1300px) {
+    .memoriak button, .tarak button{width: 350px; margin-bottom: 20px; text-align: left; padding: 0 20px; font-size: 13px;}
+    .hely-align .memoriak{float: left; display: grid; width: 350px;}
+    .hely-align .tar{float: right;  display: grid; width: 350px;}
+}
+@media screen and (max-width: 1000px){
+    .hely-align .memoriak{float:none}
+    .hely-align .tar{float:none}
+    .veg button{
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+    }
+}

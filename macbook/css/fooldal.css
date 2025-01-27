@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.fejlec{
+    background-image: url(../img/macbook-pro-jpg-fejlec.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 400px;
+}
+h1{
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 48px;
+    font-family: Font2;
+    color: white;
+}
+.chipek-fo{
+    width: calc(100vw-width-of-sidebar);
+    height: auto;
+    color: white;
+}
+h2{
+    font-size: 45px;
+    font-family: Font2;
+    padding-left: 15vw;
+    padding-top: 150px;
+}
+.chipek-p, .kijelzo-p{
+    text-align: justify;
+    padding: 40px 33vw;
+    padding-left: 15vw;
+    color: #919191;
+}
+.chipek­-align{
+    display: block;
+    width: 80vw;
+    margin-left: auto; margin-right: auto;
+}
+.chipek{
+    width: 80vw;
+    display: flex;
+}
+.box{
+    width: 30%;
+    display: block;
+    margin-left: auto; margin-right: auto;
+}
+.chip-i{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grafika hr{
+    width: 70vw;
+    size: 1px;
+    color: #919191;
+}
+.grafika-text{
+    display: block;
+    margin-right: auto; margin-left: auto;
+    width: 70vw;
+    color: #919191;
+    text-align: justify;
+}
+.grafika-kepek img{
+    width: 95vw;
+    display: block;
+    margin-left: auto; margin-right: auto;
+}
+b{
+    color: #dbdbdb;
+}
+.left, .right{width: calc(30vw); padding: 0px 10px;}
+.left{float: left;}
+.right{float: right;}
+
+.kijelzo{margin-bottom: 300px;}
+.kijelzo h2{margin-top: 300px;}
+.kijelzo-rendez{
+    display: flex;
+    padding-left: 15vw;
+}
+.kijelzo-p{float: right; max-width: 40%; padding: 45px;}
+.kijelzo img{float: left; width: 40%; height: 26%; margin-top: 20px;}
+.kijelzo a{
+    border-radius: 20px;
+    background-color: #5c5c5c;
+    color: white;
+    padding: 10px;
+}
+p{
+    font-size: 20px;
+}
+
+.felugro{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.felugro.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+@media screen and (max-width: 1000px) {
+    .chip-i{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .chip-i{
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+    }
+    .chipek{
+        width: 80vw;
+        display: grid;
+    }
+    .box{
+        width: 90%;
+        display: block;
+        margin-left: auto; margin-right: auto;
+    }
+    .left, .right{float: none; width: 80vw; padding: 20px 0;}
+    .grafika{padding-left: 0;}
+}

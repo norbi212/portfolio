@@ -1,0 +1,416 @@
+/*Alapok:*/
+::-webkit-scrollbar{display: none;}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    --arany:calc((100vw * 0.7)/600)
+}
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "PTSans";
+    src: url("PTSans-Regular.ttf");
+}
+body{
+    scrollbar-width: 0;
+    background-color: #1F1F1F;
+    height: 300vh;
+}
+.felugro{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all ease 3s;
+}
+.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.icon_up{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    display: none;
+    z-index: 999;
+}
+.show{
+    display: block;
+    transition: all 2s;
+}
+
+/*Oldal:*/
+.nyito{
+    width: 100vw;
+    height: 100vh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background-color: #2c2c2c;
+}
+.img1{
+    width: 200px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    animation: mozog1 linear infinite 14s;
+}
+.img2{
+    width: 170px;
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    animation: mozog2 linear infinite 14s;
+}
+.img3{
+    width: 190px;
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    animation: mozog3 linear infinite 14s;
+}
+.img4{
+    width: 150px;
+    position: absolute;
+    bottom: 5%;
+    left: 70%;
+    animation: mozog4 linear infinite 14s;  
+}
+.img5{
+    width: 150px;
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    animation: mozog4 linear infinite 14s;  
+}
+@keyframes mozog1 {
+    0%{transform: translateX(0) translateY(0);}
+    25%{transform: translateX(15px) translateY(19px);}
+    50%{transform: translateX(-5px) translateY(0);}
+    85%{transform: translateX(3px) translateY(4px);}
+    100%{transform: translateX(0) translateY(0);}
+}
+@keyframes mozog2 {
+    0%{transform: translateX(0) translateY(0);}
+    25%{transform: translateX(-15px) translateY(19px);}
+    50%{transform: translateX(-5px) translateY(0);}
+    80%{transform: translateX(3px) translateY(4px);}
+    100%{transform: translateX(0) translateY(0);}
+}
+@keyframes mozog3 {
+    0%{transform: translateX(0) translateY(0);}
+    25%{transform: translateX(-12px) translateY(19px);}
+    50%{transform: translateX(12px) translateY(0);}
+    80%{transform: translateX(30px) translateY(10px);}
+    100%{transform: translateX(0) translateY(0);}
+}
+@keyframes mozog4 {
+    0%{transform: translateX(0) translateY(0);}
+    25%{transform: translateX(10px) translateY(5px);}
+    50%{transform: translateX(-5px) translateY(0);}
+    85%{transform: translateX(23px) translateY(14px);}
+    100%{transform: translateX(0) translateY(0);}
+}
+.elmosott{
+    width: 65vw;
+    height: 60vh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background-color: rgb(255, 255, 255, 3%);
+    box-shadow: 0 0 5px rgb(0, 0, 0, 20%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255, 5%);
+    border-radius: 30px;
+    z-index: 900;
+}
+.nyito h1{
+    margin-bottom: 40px;
+    font-size: 23px;
+    font-family: PTSans;
+    letter-spacing: 8px;
+    font-variant: small-caps;
+}
+.nyito h1 b{
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-family: Arial;
+}
+.nyito button{
+    width: 100px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(190, 190, 190);
+    font-family: Arial;
+    border: solid 0.8px rgba(180, 17, 60, 0.596);
+    background-color: rgb(188, 17, 60);
+    border-radius: 50px;
+    animation: hopp 5s ease infinite;
+}
+@keyframes hopp{
+	0%, 70%, 85%, 95%, 100% {transform: translateY(0);}
+	80% {transform: translateY(-30px);} 
+	90% {transform: translateY(-15px);}
+}
+
+
+
+header{
+    width: 100vw;
+    height: calc(100vw / 4);
+    background-image: url("img/aradi\ sor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+h1,h2{
+    margin-top: 70px;
+    font-variant: small-caps;
+    font-family:'Arial'    /*cursive*/;
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    letter-spacing: 3px;
+    color: rgb(190, 190, 190);
+}
+h2{
+    margin-top: 0;
+    font-family: Verdana;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+.idézet_1, .idézet_1_f{
+    width: 80%;
+    max-width: 350px;
+    color: rgb(190, 190, 190);
+    font-style: italic;
+    display: block;
+    margin: 125px auto 0 auto;
+    text-align: center;  
+}
+.idézet_1_f{
+    margin: 5px auto 75px auto;
+    text-align: right;
+}
+.szöveg_1 , .szöveg_2{
+    text-align: justify;
+    width: 80vw;
+    max-width: 500px;
+    font-size: 18px;
+    color: rgb(190, 190, 190);
+    font-family:'Arial'
+}
+.szöveg_1{
+    margin-left: 30px;
+    margin-top: 100px;
+    padding-left: 20px;
+    border-left: 1px solid rgb(188, 17, 60);
+}
+.szöveg_2{
+    margin-right: 30px;
+    margin-top: 50px;
+    padding-right: 20px;
+    border-right: 1px solid rgb(188, 17, 60);
+    float: right;
+}
+.szöveg_1 b , .szöveg_2 b{
+    color: rgb(188, 17, 60);
+    font-family:'Arial'
+}
+
+
+
+.idezetek{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(50px);
+}
+.szavai{
+    font-style: italic;
+    color: rgb(190, 190, 190);
+    font-size: 25px;
+    margin-top: 300px;
+}
+.lista{
+    width: 280px; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.lista span{
+    height: 50px;
+    line-height: 50px;
+}
+.szoveg{ 
+    width: calc(100% - 280px); 
+    max-width: 500px;
+    min-height: 500px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; justify-content: center; align-items: center;
+}
+.szoveg p{
+    width: 200px;
+    text-align: center;
+    font-style: italic;
+    transform: translateX(-300%);
+    color: rgb(190, 190, 190);
+    transition: all 1s ease-in-out;
+}
+.id_nevek{
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, rgb(188, 17, 60) 1%, transparent 1%) 50% 1;
+    transition: all 0.2s ease-in;
+    color: rgb(190, 190, 190);
+    font-family:'Arial'
+}
+.id_nevek.activ{
+    border-image: linear-gradient(to right, rgb(188, 17, 60) 100%, transparent 100%) 100% 1;
+    transition: all 0.2s ease-in;
+}
+.id_nevek:hover{
+    background-color: #2c2c2c;
+}
+
+
+.idovonal{
+    width: 100vw;
+    height: auto;
+    display: flex; flex-direction: column;
+    align-items: center;
+}
+.idovonal p{
+    text-align: center;
+    width: 300px;
+    margin-top: 30px;
+    color: rgb(190, 190, 190);
+}
+.idovonal p b{
+    color: rgb(188, 17, 60);
+}
+.esemenyek{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.line{
+    border:solid rgb(188, 17, 60) 1px; 
+    width: calc(600 * var(--arany));
+    height: 0px;
+    position: relative;
+}
+.pont_kulso{
+    position: absolute;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    width: calc(22px); height: calc(22px); border-radius: 50%; background-color: #1F1F1F; z-index: 800;
+}
+.pont_belso{
+    width: calc(14px); height: calc(14px); border-radius: 50%; border: 1.5px solid rgb(188, 17, 60);
+}
+
+#p1{left: calc(20vw + (5)*var(--arany));}
+#p2{left: calc(20vw + (70)*var(--arany));}
+#p3{left: calc(20vw + (120)*var(--arany));}
+#p4{left: calc(20vw + (260)*var(--arany));}
+#p5{left: calc(20vw + (380)*var(--arany));}
+#p6{left: calc(20vw + (500)*var(--arany));}
+
+.pont_belso.p1{animation: p1 25s linear infinite;}
+.pont_belso.p2{animation: p2 25s linear infinite;}
+.pont_belso.p3{animation: p3 25s linear infinite;}
+.pont_belso.p4{animation: p4 25s linear infinite;}
+.pont_belso.p5{animation: p5 25s linear infinite;}
+.pont_belso.p6{animation: p6 25s linear infinite;}
+
+@keyframes p1{
+    0%{background-color: rgb(188, 17, 60)}
+    16.6%{background-color: rgb(188, 17, 60)}
+    16.7%{background-color: #1F1F1F}
+    100%{background-color: #1F1F1F}
+}
+@keyframes p2{
+    0%{background-color: #1F1F1F}
+    16.6%{background-color: #1F1F1F}
+    16.7%{background-color: rgb(188, 17, 60)}
+    34.3%{background-color: rgb(188, 17, 60)}
+    34.4%{background-color: #1f1f1f}
+    100%{background-color: #1F1F1F}
+}
+@keyframes p3{
+    0%{background-color: #1F1F1F}
+    34.3%{background-color: #1f1f1f}
+    34.4%{background-color: rgb(188, 17, 60)}
+    50.9%{background-color: rgb(188, 17, 60)}
+    51%{background-color: #1F1F1F}
+    100%{background-color: #1F1F1F}
+}
+@keyframes p4{
+    0%{background-color: #1F1F1F}
+    50.8%{background-color: #1f1f1f}
+    50.9%{background-color: rgb(188, 17, 60)}
+    67.5%{background-color: rgb(188, 17, 60)}
+    67.6%{background-color: #1F1F1F}
+    100%{background-color: #1F1F1F}
+}
+@keyframes p5{
+    0%{background-color: #1F1F1F}
+    67.5%{background-color: #1f1f1f}
+    67.6%{background-color: rgb(188, 17, 60)}
+    84.1%{background-color: rgb(188, 17, 60)}
+    84.2%{background-color: #1F1F1F}
+    100%{background-color: #1F1F1F}
+}
+@keyframes p6{
+    0%{background-color: #1F1F1F}
+    84.5%{background-color: #1f1f1f}
+    84.6%{background-color: rgb(188, 17, 60)}
+    100%{background-color: rgb(188, 17, 60)}
+}
+/**var(--arany)*/
+
+.geleria_cim{
+    color: #1F1F1F;
+    text-align: center;
+    line-height: 300px;
+    font-family: Arial;
+    font-size: 150px;
+    font-weight: bold;
+    font-variant: small-caps;
+    background-image: url(img/arad.jpg);
+    width: 100vw;
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.galéria{
+    transform: translateY(50px);
+    padding-top: 100px;
+    width: 100vw;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column; align-items: center; justify-content: center;
+    opacity: 0.8;
+}
+.képek{
+    width: 50vw;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: row;
+    gap: 20px;
+}
+.kep{
+    width: calc((100% - 40px)/3);
+}

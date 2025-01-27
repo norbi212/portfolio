@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fejlec{
+    background-image: url(../img/macbook-pro-jpg-fejlec.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 400px;
+}
+h1{
+    padding-top: 40px;
+    padding-left: 100px;
+    font-variant: small-caps;
+    font-size: 45px;
+    font-family: Font2;
+    color: white;
+}
+.passz{
+    background-color: rgb(88, 88, 88, 0.6);
+    border-radius: 50px;
+    display: block;
+    margin-left: 100px;
+    width: 65vw;
+    height: 500px;
+    color: white;
+    margin-bottom: 200px;
+}
+.left{
+    height: auto;
+    align-content: center;
+    display: grid;
+}
+.left li{
+    text-decoration: none;
+}
+.left button{
+    border: none;
+    background-color: rgb(88, 88, 88, 0.0);
+    font-size: 20px;
+    margin: 30px 0px;
+    color: white;
+}
+.right{
+    height: auto;
+    align-content: center;
+    display: grid;
+
+}
+#pmp, #pmd, #pmw{
+    padding-left: 25px; color: white; 
+}
+@media screen and (max-width:900px) {
+    h1{
+        padding-left: 0;
+        text-align: center;
+    }
+    .passz{
+        width: 90vw;
+        height: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .left{
+        float: none;
+        width: 90vw;
+    }
+    .right{
+        float: none;
+        width: 90vw;
+    }
+    .right img{
+        width: 85vw;
+    }
+    #pmp, #pmd, #pmw{
+        padding-left: 40px; padding-right:80px;
+    }
+}
+@media screen and (min-width:901px) {
+    .passz{
+        width: 65vw;
+        height: 500px;
+    }
+    .left{
+        float: left;
+        width: 32vw;
+        height: 500px;
+    }
+    .right{
+        float: right;
+        width: 32vw;
+        height: 500px;
+    }
+    .right img{
+        width: 32vw
+    };
+}

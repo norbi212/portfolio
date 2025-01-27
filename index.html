@@ -9,20 +9,40 @@
 <body>
     <h1>portfólióm</h1>
     <section class="content">
-        <div class="box">
+        <div class="box" id="56forr">
             <img src="56forr.png" alt="">
             <p>'56-os forradalom</p>
         </div>
 
-        <div class="box">
+        <div class="box" id="arad">
             <img src="arad.png" alt="">
             <p>aradi vértanúk emlékére</p>
         </div>
 
-        <div class="box">
+        <div class="box" id="macbook">
             <img src="macbook.png" alt="">
             <p>MacBook Pro</p>
         </div>
     </section>
+
+    <footer>@NorbiV</footer>
+
+    <script>
+        var boxes=document.querySelectorAll(".box");
+        var pages=[
+            {"id":"56forr","link":"56forr/index.html"},
+            {"id":"arad","link":"arad/index.html"},
+            {"id":"macbook","link":"macbook/fooldal.html"}
+        ]
+        boxes.forEach(box =>{
+            box.addEventListener("click", () => {
+                pages.forEach(page => {
+                    if(page.id==box.id){
+                        window.open(page.link, '_blank');
+                    }
+                });
+            })
+        })
+    </script>
 </body>
 </html>
