@@ -30,9 +30,6 @@ h1{
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-    min-height: calc(100vh - 200px);
-    grid-auto-rows: auto; /* Sorok magassága igazodik a tartalomhoz */
-    align-items: start; /* Gyerekek tartalma alapján igazít */
 }
 .box {
     width: 100%;
@@ -45,24 +42,32 @@ h1{
     justify-content: center;
     backdrop-filter: blur(20px);
     border: 0.5px solid rgba(37, 37, 37, 0.5);
-    height: auto; /* Automatikusan a tartalom magassága */
 }
 .box:hover {
-    transform: scale(1.03);
+    transform: scale(1.2);
     transform: translateY(-10px);
 }
 .box img{width: 90%;}
 .box p{
+    margin: 5px 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: lighter;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+.box h4{
     margin: 10px 0;
     text-align: center;
     font-weight: bold;
-    height: auto;
+    font-size: 20px;
 }
 
 footer{
     padding: 7px 0;
     text-align: center;
     width: 100vw;
+    margin-top: 70px;
     /*backdrop-filter: blur(20px);
     border: 0.5px solid rgba(37, 37, 37, 0.5);*/
 }

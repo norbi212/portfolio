@@ -1,0 +1,100 @@
+.fejlec{
+    background-image: url(../img/fejlec_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: calc(100vw-width-of-sidebar);
+    height: 300px;
+}
+.tartalom{
+    font-size: 15px;
+    color: #333;
+    font-style: italic;
+    width: 75vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kepek{
+    width: 45vw;
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.kepek img{
+    width: 200px;
+    height: 200px;
+}
+h1{
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 35px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+h2{
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 25px;
+}
+h3{
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 15px;
+    line-height: 0%;
+}
+.img-left{
+    width: 100px;
+    position: absolute;
+    top: 350px;
+    left: calc(50vw - 270px);
+    rotate: -20deg;
+}
+.img-right{
+    width: 80px;
+    position: absolute;
+    top: 350px;
+    left: calc(50vw + 150px);
+    rotate: 22deg;
+}
+.rendeles button{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+.rendeles p{
+    margin-left: 20px;
+}
+
+@media screen and (max-width:600px){
+    hr{
+        border: 1px solid #535353;
+        width: 70vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .rendeles .fankok{width: 100vw;}
+    .fejlec{
+        background-position: left;
+    }
+}
+@media screen and (min-width:601px){
+    .rendeles{
+        float: left;
+        width: 45vw;}
+    .fankok{
+        float: right;
+        width: 45vw;}
+    hr{
+        border: 1px solid #00000000;}
+}
+.rendeles{height: auto; background-color: rgba(243, 185, 86, 0.8);}
+.fankok{height: auto; background-color: rgba(243, 185, 86, 0.8);}

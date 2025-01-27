@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/alap.css">     <!--menü css-->
+    <link rel="stylesheet" href="css/rendeles.css"> <!--css-->
+    <title>Rendelés</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="fooldal.html"><sub><img src="img/AdobeStock_440919971_feher.png" class="logoimg"></sub>PoFánk Fánkozó</a></div>
+            <ul class="links">
+                <li><a href="rolunk.html">Rólunk</a></li>
+                <li><a href="kabala.html">Kabala</a></li>
+                <li><a href="miertmi.html">Miért Mi</a></li>
+            </ul>
+            <a href="rendeles.html" class="action-btn">Rendelés</a>
+            <button onclick="hideShow()" class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="drpd" id="drpd">
+            <li><a href="rolunk.html">Rólunk</a></li>
+            <li><a href="kabala.html">Kabala</a></li>
+            <li><a href="miertmi.html">Miért Mi</a></li>
+            <li><a href="rendeles.html" class="action-btn">Rendelés</a></li>
+        </div>
+    </header>
+    <!--Innentől az oldal-->
+    
+    <div class="fejlec"> </div>
+    <h1>rendeljen házhoz</h1>
+    <img src="img/AdobeStock_451961618_sarga.png" class="img-left">
+    <img src="img/AdobeStock_451961618_sarga.png" class="img-right">
+    <div class="tartalom">Rendelje házhoz kedvenc fánkjait tőlünk. Élvezze otthona kényelmében a felülmúlhatatlan ízű, mindig friss amerikai fánkokat. Termékeink glutént és laktózt tartalmaznak. Lehetőség van mentes fánkok vételére, de ezt telefonon vagy üzletünkben kell előre jelezni.</div>
+    <br><br>
+    <div class="">
+        <div class="rendeles">
+            <h2>rendelési felület</h2>
+            <h3>itt jelennek meg a kiválasztott fánkok</h3>
+            <p id="lista"></p>
+            <p id="ar"></p>
+            <button onclick="kupon()">Kedvezmény beváltása</button>
+            <br>
+            <button onclick="rendeles()">Rendelés</button>
+        </div>
+        <hr>
+        <div class="fankok">
+            <h2>válassza ki és adja a kosárhoz<br>kedvenc ízeit</h2>
+            <div class="kepek">
+                <a onclick="d_c()"><img src="img/fankok/chocolate.webp"></a>
+                <a onclick="d_o()"><img src="img/fankok/oreo.jpg"></a>
+                <a onclick="d_f()"><img src="img/fankok/sport 2024-02-16 08_54_30.jpg"></a>
+                <a onclick="d_s()"><img src="img/fankok/strawberry.jpg"></a>
+                <a onclick="d_t()"><img src="img/fankok/tiramisu.jpg"></a>
+                <a onclick="d_v()"><img src="img/fankok/vanilia.jpg"></a>
+                <a onclick="d_k()"><img src="img/fankok/charamell.jpg"></a>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <script src="css/rendeles.js"></script>
+    <script src="css/alap.js"></script>
+</body>
+</html>

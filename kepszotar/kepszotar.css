@@ -1,0 +1,71 @@
+h1{
+    text-align: center;
+    width: 100vw;
+    font-family: Arial;
+    font-variant: small-caps;
+}
+h2{
+    text-align: center;
+    width: 100vw;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: normal;
+}
+.container{
+    display: grid;
+    gap: 20px;
+}
+@media screen and (max-width: 799px) {
+    .container{grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 800px) {
+    .container{grid-template-columns: repeat(3, 1fr); gap: 40px;}
+}
+@media screen and (min-width: 1200px) {
+    .container{grid-template-columns: repeat(4, 1fr); gap: 40px;}
+}
+@media screen and (min-width: 1201px) {
+    .container{grid-template-columns: repeat(5, 1fr); gap: 40px;}
+}
+.item{
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-position: center;
+    overflow: hidden;
+    font-family: Arial;
+    font-size: 17px;
+}
+.eng, .deu{
+    width: 200px; height: 200px; 
+    text-align: center; 
+    line-height: 200px; 
+    position: relative;
+    backdrop-filter: blur(5px);
+    font-size: 20px;
+    font-weight: bold;
+}
+.hun{
+    width: 200px; height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(160, 160, 160, 0.7);
+    transform: translateY(200px);
+    transition: 0.5s;
+}
+sub{
+    font-weight: normal;
+}
+#alma{background-image: url("alma.jpg");}
+#asztal{background-image: url("asztal.jpg");}
+#bicikli{background-image: url("bicikli.webp");}
+#eper{background-image: url("eper.jpg");}
+#hegy{background-image: url("hegy.jpg");}
+#kanál{background-image: url("kanál.jpg");}
+#könyv{background-image: url("könyv.jpg");}
+#foci{background-image: url("labda.jpg");}
+#suli{background-image: url("suli.jpg");}
+#ablak{background-image: url("ablak.jpg");}

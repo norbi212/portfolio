@@ -1,0 +1,106 @@
+.fejlec{
+    background-image: url(../img/fejlec_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left;
+    width: calc(100vw-width-of-sidebar);
+    height: 300px;
+}
+
+@keyframes slide {
+    from{transform: translateX(0);}
+    to{transform: translateX(-100%);}
+}
+.visszajelzesek{
+    width: calc(90vw -width-of-sidebar);
+    height: 200px;
+    margin: 10px 30px 30px 30px;
+    overflow: hidden;
+}
+.velemenyek{
+    width: calc(90vw -width-of-sidebar);
+    height: 200px;
+    display:inline-flex;
+    animation: slide 90s infinite linear;
+}
+.velemenyek img{
+    width: 200px;
+    height: 200px;
+    margin: 0 40px;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+
+.propaganda_cim{
+    margin: 55px 0;
+    width: calc(100vw-width-of-sidebar);
+    height: 300px;
+    background-image: url(../img/fejlec_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    line-height: 300px
+}
+.propaganda_cim h1{
+    color: #fff;
+    text-align: center;
+    filter: drop-shadow(10px 10px 10px #222);
+    font-size: 3rem;
+}
+
+
+.porpaganda_alaign{
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.propaganda{
+    width: 80vw;
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-variant: small-caps;
+}
+.szoveg{
+    text-align: justify;
+}
+
+@media screen and (max-width:900px){
+    main img{
+        width: 35vw;
+        height: 35vw;
+    }
+    .szoveg{
+        width: 35vw;
+    }
+}
+@media screen and (min-width:901px){
+    main img{
+        width: 25vw;
+        height: 25vw;
+    }
+    .szoveg{
+        width: 25vw;
+    }
+}
+@media screen and (max-width:600px){
+    main img{
+        width: 70vw;
+        height: 70vw;
+    }
+    .szoveg{
+        width: 70vw;
+    }
+    .propaganda_cim h1{
+        font-size: 2.5rem;
+    }
+}
