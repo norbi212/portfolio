@@ -15,3 +15,5 @@ index.html : gyűjtőoldal ahonnan át lehet majd ugrálni más más oldalamra
 --netlify hozzákötve
 
 LINK MŰKÖDIK
+
+25.02.23: Állomány átszervezve, főmappa fő indexe átdob a webprogra -> későbbi lehetőség egyébb portfóliúra
