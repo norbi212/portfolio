@@ -1,0 +1,37 @@
+[
+    {
+        "id":"56forr",
+        "img":"56forr.png",
+        "title":"'56-os forradalom",
+        "description":"iskolai projekt (2024-25)<br>többnyire nagy képernyőre optimalizálva",
+        "link":"56forr/index.html"
+    },
+    {
+        "id":"arad",
+        "img":"arad.png",
+        "title":"Aradi vértanúk",
+        "description":"iskolai projekt (2024-25)<br>többnyire nagy képernyőre optimalizálva",
+        "link":"arad/index.html"
+    },
+    {
+        "id":"macbook",
+        "img":"macbook.png",
+        "title":"MacBook Pro",
+        "description":"iskolai projekt (2023-24)<br>többnyire nagy képernyőre optimalizálva",
+        "link":"macbook/fooldal.html"
+    },
+    {
+        "id":"pofank",
+        "img":"fank.png",
+        "title":"PoFank Fánkozó",
+        "description":"iskolai projekt (2023-24)<br>több méretű képernyőre is optimalizálva",
+        "link":"pofank/miertmi.html"
+    },
+    {
+        "id":"kepszotar",
+        "img":"szotar.png",
+        "title":"Képszótár",
+        "description":"iskolai projekt (2023-24)<br>több méretű képernyőre is optimalizálva",
+        "link":"kepszotar/index.html"
+    }
+]
