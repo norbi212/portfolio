@@ -1,15 +1,15 @@
 async function getData() {
     try {
         const response = await fetch("pages.json");
-        const pageList = await response.json();
-        return pageList;
+        const data = await response.json();
+        return data;
     }catch (error) {
         console.log("Hiba: "+error)
     }
 }
 
-getData();
 let contentDiv=document.querySelector('.content');
+let pageList=getData();
 addDataToHTML = () => {
     contentDiv.innerHTML='';
     pageList.forEach(item =>{
