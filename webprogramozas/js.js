@@ -6,12 +6,13 @@ async function getData() {
     }catch (error) {
         console.log("Hiba: "+error)
     }
-}
+};
 
-let contentDiv=document.querySelector('.content');
-let pageList=getData();
-addDataToHTML = () => {
+async function addDataToHTML(){
+    const pageList = await getData();
+
     contentDiv.innerHTML='';
+
     pageList.forEach(item =>{
         let newPage=document.createElement('div');
         newPage.classList.add('box');
@@ -23,14 +24,19 @@ addDataToHTML = () => {
         `;
     contentDiv.appendChild(newPage);
     })
-};
-let boxes=document.querySelectorAll(".box");
-boxes.forEach(box =>{
-    box.addEventListener("click", () => {
-        pageList.forEach(page => {
-            if(page.id==box.id){
-                window.open(page.link, '_blank');
-            }
-        });
+
+    let boxes=document.querySelectorAll(".box");
+    
+    boxes.forEach(box =>{
+        box.addEventListener("click", () => {
+            pageList.forEach(page => {
+                if(page.id==box.id){
+                    window.open(page.link, '_blank');
+                }
+            });
+        })
     })
-})
+};
+
+let contentDiv=document.querySelector('.content');
+addDataToHTML();
