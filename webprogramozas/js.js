@@ -1,35 +1,36 @@
-let boxes=document.querySelectorAll(".box");
+async function getData() {
+    try {
+        const response = await fetch("pages.json");
+        const pageList = await response.json();
+        return pageList;
+    }catch (error) {
+        console.log("Hiba: "+error)
+    }
+}
+
+getData();
 let contentDiv=document.querySelector('.content');
+addDataToHTML = () => {
+    contentDiv.innerHTML='';
+    pageList.forEach(item =>{
+        let newPage=document.createElement('div');
+        newPage.classList.add('box');
+        newPage.id=item.id;
+        newPage.innerHTML=`
+            <img src="${item.img}" alt="">
+            <h4>${item.title}</h4>
+            <p>${item.description}</p>
+        `;
+    contentDiv.appendChild(newPage);
+    })
+};
+let boxes=document.querySelectorAll(".box");
 boxes.forEach(box =>{
     box.addEventListener("click", () => {
-        pages.forEach(page => {
+        pageList.forEach(page => {
             if(page.id==box.id){
                 window.open(page.link, '_blank');
             }
         });
     })
 })
-addDataToHTML = () => {
-    contentDiv.innerHTML='';
-    productList.forEach(item =>{
-        let newProd=document.createElement('div');
-        newProd.classList.add('box');
-        newProd.id=item.id;
-        newProd.innerHTML=`
-            <img src="${item.img}" alt="">
-            <h4>${item.title}</h4>
-            <p>${item.description}</p>
-        `;
-    contentDiv.appendChild(newProd);
-    })
-}
-const getData = () =>{
-    fetch('pages.json')
-    .then(response => response.json())
-    .then(data => {
-        productList = data;
-        console.log(productList);
-        addDataToHTML();
-    })
-}
-getData();
