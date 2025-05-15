@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Világ Városai</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <section class="content">
+        <div class="overflow">
+            <h1>Népszerű úti célok</h1>
+            <div class="cards">
+                <div class="card" id="card1"></div><div class="card" id="card1"></div><div class="card" id="card1"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        fetch("header.html")
+            .then(response=>response.text())
+            .then(data=>{
+                console.log("Amit viszaad: "+data)
+                document.getElementById("header-placeholder").innerHTML=`${data}`;
+        });
+    </script>
+</body>
+</html>

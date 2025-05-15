@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body{
+    min-height: 300vh;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--main-bg);
+}
+::-webkit-scrollbar{display: none;}
+html{scroll-behavior: smooth;}
+:root{
+    --main-bg: #f5ede2;
+    --button-bg: #0f2431;
+}
+
+.hero {
+    width: 100vw;
+    height: 85vh;
+    background-image: url('../img/20250514_065642609_iOS.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+} */

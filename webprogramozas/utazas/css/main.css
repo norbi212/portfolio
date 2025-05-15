@@ -1,0 +1,85 @@
+.menu {
+    position: absolute;
+    top: 20px;
+    width: 80%;
+    background: var(--main-bg);
+    color: #1A1A1A;
+    text-decoration: none;
+    padding: 1rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.menu > .current{
+    font-weight: bolder;
+    color: var(--button-bg);
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu a{
+    color: #1A1A1A;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.menu a:hover{
+    color: var(--button-bg);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.hero-content {
+    z-index: 1;
+    text-align: center;
+    transform: translateY(-10vh);
+}
+.hero-content h1{
+    font-size: 70px;
+    color: white;
+    text-align: left;
+}
+.hero-content button{
+    background-color: var(--button-bg);
+    color: white;
+    padding: 15px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* CONTENT */
+.content{
+    width: 100vw;
+    display: flex;
+    flex-direction: row; align-items: center; justify-content: center;
+}
+.overflow{
+    width: 80vw;
+    height: 400px;
+    background-color: var(--main-bg);
+    transform: translateY(-80px);
+}
+.overflow h1{
+    color: var(--button-bg);
+    margin: 15px 35px;
+}
+.cards{
+    margin-left: 35px;
+    width: calc(100% - 70px);
+    background-color: aqua;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.card{
+    width: calc((100% - 60px)/3);
+    height: 100px;
+    background-color: red;
+}
