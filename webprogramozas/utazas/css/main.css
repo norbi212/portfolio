@@ -68,11 +68,11 @@
 .overflow h1{
     color: var(--button-bg);
     margin: 15px 35px;
+    font-size: 40px;
 }
 .cards{
     margin-left: 35px;
     width: calc(100% - 70px);
-    background-color: aqua;
     height: 400px;
     display: flex;
     justify-content: space-between;
@@ -80,6 +80,32 @@
 }
 .card{
     width: calc((100% - 60px)/3);
-    height: 100px;
-    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.card > img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card > h2{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: var(--button-bg);
+}
+.card > .country{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: var(--button-bg);
+}
+.card > .weather{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+.card > .icon{
+    width: 40px;
+}
+.card > .currency{
+    margin-left: 10px;
 }

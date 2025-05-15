@@ -1,0 +1,132 @@
+[
+    {  
+      "name": "Róma",  
+      "country": "Olaszország",  
+      "language": null,  
+      "currency": null,  
+      "weather": null,  
+      "weatherIcon": null,  
+      "description": null,  
+      "images": []  
+    },  
+    {  
+      "name": "Tokió",  
+      "country": "Japán",  
+      "language": null,  
+      "currency": null,  
+      "weather": null,  
+      "weatherIcon": null,  
+      "description": null,  
+      "images": []  
+    },  
+    {  
+      "name": "New York",  
+      "country": "Egyesült Államok",  
+      "language": null,  
+      "currency": null,  
+      "weather": null,  
+      "weatherIcon": null,  
+      "description": null,  
+      "images": []  
+    },  
+    {  
+      "name": "London",  
+      "country": "Egyesült Királyság",  
+      "language": null,  
+      "currency": null,  
+      "weather": null,  
+      "weatherIcon": null,  
+      "description": null,  
+      "images": []  
+    },  
+    {  
+      "name": "Párizs",  
+      "country": "Franciaország",  
+      "language": null,  
+      "currency": null,  
+      "weather": null,  
+      "weatherIcon": null,  
+      "description": null,  
+      "images": []  
+    },  
+    {  
+      "name": "Barcelona",  
+      "country": "Spanyolország",  
+      "language": null,  
+      "currency": null,  
+      "weather": null,  
+      "weatherIcon": null,  
+      "description": null,  
+      "images": []  
+    },  
+    {  
+      "name": "Isztambul",  
+      "country": "Törökország",  
+      "language": null,  
+      "currency": null,  
+      "weather": null,  
+      "weatherIcon": null,  
+      "description": null,  
+      "images": []  
+    },
+    {
+      "name": "Dubai",
+      "country": "Egyesült Arab Emírségek",
+      "language": null,
+      "currency": null,
+      "weather": null,
+      "weatherIcon": null,
+      "description": null,
+      "images": []
+    },
+    {
+      "name": "Bangkok",
+      "country": "Thaiföld",
+      "language": null,
+      "currency": null,
+      "weather": null,
+      "weatherIcon": null,
+      "description": null,
+      "images": []
+    },
+    {
+      "name": "Sydney",
+      "country": "Ausztrália",
+      "language": null,
+      "currency": null,
+      "weather": null,
+      "weatherIcon": null,
+      "description": null,
+      "images": []
+    },
+    {
+      "name": "Kairó",
+      "country": "Egyiptom",
+      "language": null,
+      "currency": null,
+      "weather": null,
+      "weatherIcon": null,
+      "description": null,
+      "images": []
+    },
+    {
+      "name": "Prága",
+      "country": "Csehország",
+      "language": null,
+      "currency": null,
+      "weather": null,
+      "weatherIcon": null,
+      "description": null,
+      "images": []
+    },
+    {
+      "name": "Amszterdam",
+      "country": "Hollandia",
+      "language": null,
+      "currency": null,
+      "weather": null,
+      "weatherIcon": null,
+      "description": null,
+      "images": []
+    }
+]  

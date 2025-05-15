@@ -14,8 +14,7 @@
     <section class="content">
         <div class="overflow">
             <h1>Népszerű úti célok</h1>
-            <div class="cards">
-                <div class="card" id="card1"></div><div class="card" id="card1"></div><div class="card" id="card1"></div>
+            <div class="cards" id="cards">
             </div>
         </div>
     </section>
@@ -24,9 +23,10 @@
         fetch("header.html")
             .then(response=>response.text())
             .then(data=>{
-                console.log("Amit viszaad: "+data)
-                document.getElementById("header-placeholder").innerHTML=`${data}`;
+                document.getElementById("header-placeholder").innerHTML=data;
         });
     </script>
+    <script src="js/base.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
