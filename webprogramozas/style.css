@@ -1,7 +1,7 @@
 html{ scroll-behavior: smooth; }
 body{ 
     scrollbar-width: 0;
-    background: url(AdobeStock_394400394.jpeg) no-repeat center;
+    background: url(img/AdobeStock_394400394.jpeg) no-repeat center;
     background-size: cover;
     min-height: 100vh;
     color: white;
