@@ -110,3 +110,26 @@
 .card > .currency{
     margin-left: 20px;
 }
+/* CONTACT */
+.contact{
+    width: 80vw;
+    background-color: var(--main-bg);
+    margin-top: 50px;
+}
+.contact h1{
+    color: var(--button-bg);
+}
+.contact > .description{
+    width: calc(50% - 30px);
+    background-color: #1A1A1A;
+    float: left;
+    padding: 0 10px;
+    color: var(--button-bg);
+}
+.contact > .contract-details{
+    width: calc(50% - 30px);
+    background-color: #743434;
+    float: right;
+    padding-right: 30px;
+    color: var(--button-bg);
+}
