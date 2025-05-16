@@ -118,6 +118,7 @@
 }
 .contact h1{
     color: var(--button-bg);
+    font-size: 40px;
 }
 .contact > .description{
     width: calc(40% - 30px);
