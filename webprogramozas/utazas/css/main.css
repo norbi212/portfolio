@@ -61,7 +61,6 @@
 }
 .overflow{
     width: 80vw;
-    height: 400px;
     background-color: var(--main-bg);
     transform: translateY(-80px);
 }
@@ -114,20 +113,21 @@
 .contact{
     width: 80vw;
     background-color: var(--main-bg);
-    margin-top: 50px;
+    margin-top: 100px;
+    padding: 0 30px;
 }
 .contact h1{
     color: var(--button-bg);
 }
 .contact > .description{
-    width: calc(50% - 30px);
+    width: calc(40% - 30px);
     background-color: #1A1A1A;
     float: left;
     padding: 0 10px;
     color: var(--button-bg);
 }
 .contact > .contract-details{
-    width: calc(50% - 30px);
+    width: calc(40% - 30px);
     background-color: #743434;
     float: right;
     padding-right: 30px;
