@@ -42,7 +42,7 @@ html{scroll-behavior: smooth;}
 .menu {
     position: absolute;
     top: 20px;
-    width: 80%;
+    width: 80vw;
     background: var(--main-bg);
     color: #1A1A1A;
     text-decoration: none;

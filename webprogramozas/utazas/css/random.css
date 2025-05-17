@@ -1,0 +1,9 @@
+.hero{
+    height: 40vh;
+}
+.hero-content {
+    transform: translateY(0);
+}
+.hero-content button{
+    display: none;
+}

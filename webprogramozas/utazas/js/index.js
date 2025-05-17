@@ -1,4 +1,5 @@
 document.addEventListener("cityListReady",()=>{
+    document.querySelector(".cards").innerHTML="";
     let list = window.cityList;
     const images = [
         "img/roma.jpg",

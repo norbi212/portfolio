@@ -62,7 +62,7 @@ async function updateCityData(element) {
     }
 }
 
-/* Betöltjük a header.html-t és inicializáljuk a menüt */
+/* HEADER */
 async function loadHeader() {
     try {
         const response = await fetch("header.html");
