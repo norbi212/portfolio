@@ -83,7 +83,11 @@
     margin-left: 100px;
     color: var(--button-bg);
 }
-.contact > .contract-details a{
+.contact > .contract-details > .tel , .mail{
+    text-decoration: none;
+    color: var(--button-bg);
+}
+.contact > .contract-details > .page{
     text-decoration: none;
     margin-left: 30px;
     margin-top: 30px;
