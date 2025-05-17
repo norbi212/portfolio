@@ -1,9 +1,57 @@
+:root{
+    --main-bg: #f5ede2;
+    --button-bg: #0f2431;
+}
 .hero{
-    height: 40vh;
+    height: 50vh;
 }
 .hero-content {
     transform: translateY(0);
 }
 .hero-content button{
     display: none;
+}
+
+/* CONTENT */
+.content{
+    display: flex;
+    align-items: center; justify-content: center;
+}
+.overflow{
+    width: 80vw;
+    transform: translateY(-60px);
+    background-color: var(--main-bg);
+    padding: 35px;
+    color: var(--button-bg);
+    padding-bottom: 0px;
+    z-index: 10;
+}
+.overflow > p{
+    margin: 20px 0;
+}
+.overflow > h2{
+    margin-top: 20px;
+}
+.overflow > .ad{
+    margin: 5px 0;
+}
+.overflow > .contract-details > a{
+    text-decoration: none;
+    color: var(--button-bg);
+}
+.overflow > .map{
+    width: 50%;
+    min-width: 300px;
+    height: 25vw; /* (1:2) */
+}
+.lastImg{
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+}
+@media screen and (max-width: 700px){
+    .overflow{
+        transform: translateY(0);
+        width: 100vw;
+    }
 }
