@@ -119,7 +119,7 @@ html{scroll-behavior: smooth;}
 
 @media screen and (max-width: 700px) {
     .hero{
-        height: 47vh;
+        height: 50vh;
         background-position: top;
     }
     .menuBtn{
