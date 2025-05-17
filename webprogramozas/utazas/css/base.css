@@ -50,6 +50,7 @@ html{scroll-behavior: smooth;}
     z-index: 2;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 .menu > .current{
     font-weight: bolder;
@@ -94,6 +95,28 @@ html{scroll-behavior: smooth;}
     margin-top: 30px;
 }
 
+.menu-scroll {
+    position: absolute;
+    top: 20px;
+    transition: top 0.4s ease;
+}
+
+.menu-fixed-show {
+    position: fixed;
+    top: 20px; /* ← itt volt eddig 0, most 20 legyen */
+    width: 80%;
+    z-index: 999;
+    transition: top 0.3s ease;
+}
+
+.menu-fixed-hide {
+    position: fixed;
+    top: -100px; /* el is tűnik */
+    width: 80%;
+    z-index: 999;
+    transition: top 0.3s ease;
+}
+
 @media screen and (max-width: 700px) {
     .hero{
         height: 47vh;
@@ -103,7 +126,8 @@ html{scroll-behavior: smooth;}
         display:block;
         position: absolute;
         top: 20px;
-        left: 20px
+        left: 20px;
+        z-index: 1000;
     }
     .menu{
         position: absolute;
@@ -111,6 +135,9 @@ html{scroll-behavior: smooth;}
         left: 20px;
         flex-direction: column;
         display: none;
+    }
+    .menu.visible {
+        display: block;
     }
     .menu ul{
         flex-direction: column;

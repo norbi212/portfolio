@@ -6,7 +6,7 @@ async function getCityList() {
         return data;
     } catch (error) {
         console.log('Hiba a JSON betöltésekor: ' + error);
-        return []; // hogy ne legyen undefined, ha hiba van
+        return [];
     }
 }
 
@@ -18,7 +18,6 @@ async function updateCityData(element) {
     const cityName = element.name;
     const countryName = element.country;
 
-    // 1. openWeatherMap
     try {
         const weatherRes = await fetch(
             `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(cityName)}&appid=${openWeatherKey}&units=metric&lang=hu`
@@ -30,7 +29,6 @@ async function updateCityData(element) {
         console.warn(`Időjárás nem sikerült: ${cityName}`, err);
     }
 
-    // 2. Countries
     try {
         const countryRes = await fetch(
             `https://restcountries.com/v3.1/translation/${encodeURIComponent(countryName)}?lang=hu`
@@ -43,7 +41,6 @@ async function updateCityData(element) {
         console.warn(`Országadat nem sikerült: ${countryName}`, err);
     }
 
-    // 3. Description
     try {
         const wikiRes = await fetch(
             `https://hu.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(cityName)}`
@@ -54,7 +51,6 @@ async function updateCityData(element) {
         console.warn(`Wikipédia-leírás nem sikerült: ${cityName}`, err);
     }
 
-    // 4. Images
     try {
         const imageRes = await fetch(
             `https://api.unsplash.com/search/photos?query=${encodeURIComponent(cityName)}&client_id=${unsplashKey}&per_page=3`
@@ -66,10 +62,60 @@ async function updateCityData(element) {
     }
 }
 
+/* Betöltjük a header.html-t és inicializáljuk a menüt */
+async function loadHeader() {
+    try {
+        const response = await fetch("header.html");
+        const html = await response.text();
+        document.getElementById("header-placeholder").innerHTML = html;
+
+        const menuBtn = document.querySelector(".menuBtn");
+        const menu = document.querySelector(".menu");
+
+        if (menuBtn && menu) {
+            menuBtn.addEventListener("click", () => {
+                menu.classList.toggle("visible");
+            });
+        }
+
+        let prevScrollY = window.scrollY;
+
+        function handleScroll() {
+            if (!menu || window.innerWidth <= 700) {
+                menu.classList.remove("menu-fixed-show", "menu-fixed-hide");
+                menu.classList.add("menu-scroll");
+                return;
+            }
+
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY === 0) {
+                menu.classList.remove("menu-fixed-show", "menu-fixed-hide");
+                menu.classList.add("menu-scroll");
+            } else if (currentScrollY > prevScrollY) {
+                menu.classList.remove("menu-fixed-show", "menu-scroll");
+                menu.classList.add("menu-fixed-hide");
+            } else {
+                menu.classList.remove("menu-fixed-hide", "menu-scroll");
+                menu.classList.add("menu-fixed-show");
+            }
+
+            prevScrollY = currentScrollY;
+        }
+
+        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("resize", handleScroll);
+
+    } catch (err) {
+        console.error("Nem sikerült a fejléc betöltése:", err);
+    }
+}
+
 /* MAIN */
 async function main() {
-    let cityList = await getCityList();
+    await loadHeader();
 
+    const cityList = await getCityList();
     for (const element of cityList) {
         await updateCityData(element);
     }
