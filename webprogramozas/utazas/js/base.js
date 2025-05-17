@@ -68,6 +68,7 @@ async function loadHeader() {
         const response = await fetch("header.html");
         const html = await response.text();
         document.getElementById("header-placeholder").innerHTML = html;
+        document.dispatchEvent(new Event("headerReady"));
 
         const menuBtn = document.querySelector(".menuBtn");
         const menu = document.querySelector(".menu");

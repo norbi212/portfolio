@@ -1,4 +1,6 @@
-document.querySelector(".pageTitle").innerText="Kapcsolat";
+document.addEventListener("headerReady",()=>{
+    document.querySelector(".pageTitle").innerText="Kapcsolat";
+});
 document.addEventListener("cityListReady",()=>{
     
 });
