@@ -5,7 +5,10 @@ document.addEventListener("cityListReady",()=>{
         "img/tokio.jpg",
         "img/newyork.jpg"
     ];
-    for (let i = 0; i < 3; i++) {
+    let windowWidth = window.innerWidth;
+    let numOfBoxes=3;
+    if (windowWidth<1100) numOfBoxes=2;
+    for (let i = 0; i < numOfBoxes; i++) {
         let box = document.createElement("div");
         box.classList.add("card");
         box.innerHTML=`

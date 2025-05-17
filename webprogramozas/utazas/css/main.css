@@ -1,56 +1,6 @@
-.menu {
-    position: absolute;
-    top: 20px;
-    width: 80%;
-    background: var(--main-bg);
-    color: #1A1A1A;
-    text-decoration: none;
-    padding: 1rem;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-}
-.menu > .current{
-    font-weight: bolder;
-    color: var(--button-bg);
-}
-.menu ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.menu a{
-    color: #1A1A1A;
-    text-decoration: none;
-    transition: all 0.5s;
-}
-.menu a:hover{
-    color: var(--button-bg);
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.hero-content {
-    z-index: 1;
-    text-align: center;
-    transform: translateY(-10vh);
-}
-.hero-content h1{
-    font-size: 70px;
-    color: white;
-    text-align: left;
-}
-.hero-content button{
-    background-color: var(--button-bg);
-    color: white;
-    padding: 15px 20px;
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 30px;
+:root{
+    --main-bg: #f5ede2;
+    --button-bg: #0f2431;
 }
 
 /* CONTENT */
@@ -113,24 +63,79 @@
 .contact{
     width: 80vw;
     background-color: var(--main-bg);
-    margin-top: 100px;
-    padding: 0 30px;
+    margin-top: 50px;
+    padding-left: 60px;
+    margin-bottom: 200px;
 }
 .contact h1{
     color: var(--button-bg);
     font-size: 40px;
 }
 .contact > .description{
-    width: calc(40% - 30px);
-    background-color: #1A1A1A;
+    width: calc(50% - 30px);
+    max-width: 400px;
     float: left;
-    padding: 0 10px;
     color: var(--button-bg);
+    text-align: justify;
 }
 .contact > .contract-details{
-    width: calc(40% - 30px);
-    background-color: #743434;
-    float: right;
-    padding-right: 30px;
+    float: left;
+    margin-left: 100px;
     color: var(--button-bg);
+}
+.contact > .contract-details a{
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: white;
+    background-color: var(--button-bg);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+@media screen and (max-width:1100px) {
+    .card{
+        width: calc((100% - 30px)/2)
+    }
+}
+@media screen and (max-width: 700px) {
+    .overflow{
+        transform: translateY(0px);
+        width: 100vw;
+        padding-top: 30px;
+    }
+    .overflow h1{
+        font-size: 35px;
+        margin-top: 0px;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+    }
+    .contact{
+        width: calc(100%);
+        padding-left: 0;
+    }
+    .contact h1{
+        margin-left: 35px;
+    }
+    .contact > .description{
+        width: calc(100% - 70px);
+        margin-left: 35px;
+        float: none;
+    }
+    .contact > .contract-details{
+        margin-left: 35px;
+        float: none;
+        margin-top: 50px;
+        width: calc(100% - 70px);
+
+    }
+}
+@media screen and (max-width: 500px){
+    .card{
+        width: calc(100%);
+    }
 }
