@@ -29,6 +29,8 @@ document.addEventListener("cityListReady",()=>{
 
                     box.addEventListener("click", () => {
                         document.querySelector(".result-placeholder").style.display = "block";
+                        document.querySelector(".blur").style.display = "flex";
+                    
                         // Itt kiegészítheted a .result-placeholder feltöltésével, pl.:
                         result(box.id);
                     });
@@ -44,6 +46,7 @@ async function result(city) {
     const html = await response.text();
 
     const placeholder = document.getElementById("result-placeholder");
+    const blur = document.getElementById("blur");
     placeholder.innerHTML = html;
 
     // Várj egy kicsit, hogy a DOM frissüljön
@@ -53,9 +56,21 @@ async function result(city) {
         if (element.name === city) {
             document.getElementById("city").innerText = element.name;
             document.getElementById("country").innerText = element.country;
-            document.getElementById("weatherDesc").innerText = element.weather;
+            document.getElementById("weatherDesc").innerText = element.weatherDescript;
             document.getElementById("description").innerText = element.description;
             document.getElementById("weatherIcon").src = element.weatherIcon;
+            element.images.forEach(image =>{
+                let img = document.createElement("img");
+                img.src=image;
+                document.getElementById("images").appendChild(img);
+            })
         }
     });
+    blur.style.display="flexs";
+    placeholder.style.display="block";
+
+    document.getElementById("closeIcon").addEventListener("click",()=>{
+        placeholder.style.display="none";
+        blur.style.display="none";
+    })
 }
