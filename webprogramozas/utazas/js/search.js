@@ -14,6 +14,7 @@ document.addEventListener("cityListReady",()=>{
                     resultsList.push(element);
                     let box = document.createElement("div");
                     box.classList.add("card");
+                    box.id=element.name;
                     box.innerHTML=`
                         <img src="${element.images[0]}">
                         <h2>${element.name}</h2>
@@ -25,9 +26,36 @@ document.addEventListener("cityListReady",()=>{
                         <p class="descript">${(element.description).slice(0,200)}...</p>
                         <button class="more">Bővebben</button>
                     `;
+
+                    box.addEventListener("click", () => {
+                        document.querySelector(".result-placeholder").style.display = "block";
+                        // Itt kiegészítheted a .result-placeholder feltöltésével, pl.:
+                        result(box.id);
+                    });
+
                     document.querySelector(".searchResults").appendChild(box);
                 }
             });
-        }
-    })
+        };
+    });
 });
+async function result(city) {
+    const response = await fetch("result.html");
+    const html = await response.text();
+
+    const placeholder = document.getElementById("result-placeholder");
+    placeholder.innerHTML = html;
+
+    // Várj egy kicsit, hogy a DOM frissüljön
+    await new Promise(wait => setTimeout(wait, 0));
+
+    cityList.forEach(element => {
+        if (element.name === city) {
+            document.getElementById("city").innerText = element.name;
+            document.getElementById("country").innerText = element.country;
+            document.getElementById("weatherDesc").innerText = element.weather;
+            document.getElementById("description").innerText = element.description;
+            document.getElementById("weatherIcon").src = element.weatherIcon;
+        }
+    });
+}
