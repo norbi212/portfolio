@@ -4,7 +4,8 @@
       "country": "Olaszország",  
       "language": null,  
       "currency": null,  
-      "weather": null,  
+      "weatherDegree": null,
+      "weatherDescript": null,
       "weatherIcon": null,  
       "description": null,  
       "images": []  
@@ -14,7 +15,8 @@
       "country": "Japán",  
       "language": null,  
       "currency": null,  
-      "weather": null,  
+      "weatherDegree": null, 
+      "weatherDescript": null,  
       "weatherIcon": null,  
       "description": null,  
       "images": []  
@@ -24,7 +26,8 @@
       "country": "Egyesült Államok",  
       "language": null,  
       "currency": null,  
-      "weather": null,  
+      "weatherDegree": null, 
+      "weatherDescript": null,  
       "weatherIcon": null,  
       "description": null,  
       "images": []  
@@ -34,7 +37,8 @@
       "country": "Egyesült Királyság",  
       "language": null,  
       "currency": null,  
-      "weather": null,  
+      "weatherDegree": null, 
+      "weatherDescript": null,  
       "weatherIcon": null,  
       "description": null,  
       "images": []  
@@ -44,7 +48,8 @@
       "country": "Franciaország",  
       "language": null,  
       "currency": null,  
-      "weather": null,  
+      "weatherDegree": null, 
+      "weatherDescript": null,  
       "weatherIcon": null,  
       "description": null,  
       "images": []  
@@ -54,7 +59,8 @@
       "country": "Spanyolország",  
       "language": null,  
       "currency": null,  
-      "weather": null,  
+      "weatherDegree": null, 
+      "weatherDescript": null,  
       "weatherIcon": null,  
       "description": null,  
       "images": []  
@@ -64,7 +70,8 @@
       "country": "Törökország",  
       "language": null,  
       "currency": null,  
-      "weather": null,  
+      "weatherDegree": null, 
+      "weatherDescript": null,  
       "weatherIcon": null,  
       "description": null,  
       "images": []  
@@ -74,7 +81,8 @@
       "country": "Egyesült Arab Emírségek",
       "language": null,
       "currency": null,
-      "weather": null,
+      "weatherDegree": null, 
+      "weatherDescript": null,
       "weatherIcon": null,
       "description": null,
       "images": []
@@ -84,7 +92,8 @@
       "country": "Thaiföld",
       "language": null,
       "currency": null,
-      "weather": null,
+      "weatherDegree": null, 
+      "weatherDescript": null,
       "weatherIcon": null,
       "description": null,
       "images": []
@@ -94,7 +103,8 @@
       "country": "Ausztrália",
       "language": null,
       "currency": null,
-      "weather": null,
+      "weatherDegree": null, 
+      "weatherDescript": null,
       "weatherIcon": null,
       "description": null,
       "images": []
@@ -104,7 +114,8 @@
       "country": "Egyiptom",
       "language": null,
       "currency": null,
-      "weather": null,
+      "weatherDegree": null, 
+      "weatherDescript": null,
       "weatherIcon": null,
       "description": null,
       "images": []
@@ -114,7 +125,8 @@
       "country": "Csehország",
       "language": null,
       "currency": null,
-      "weather": null,
+      "weatherDegree": null, 
+      "weatherDescript": null,
       "weatherIcon": null,
       "description": null,
       "images": []
@@ -124,7 +136,8 @@
       "country": "Hollandia",
       "language": null,
       "currency": null,
-      "weather": null,
+      "weatherDegree": null, 
+      "weatherDescript": null,
       "weatherIcon": null,
       "description": null,
       "images": []

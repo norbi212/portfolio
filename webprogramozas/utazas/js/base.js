@@ -23,7 +23,8 @@ async function updateCityData(element) {
             `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(cityName)}&appid=${openWeatherKey}&units=metric&lang=hu`
         );
         const weatherData = await weatherRes.json();
-        element.weather = `${weatherData.main.temp} °C, ${weatherData.weather[0].description}`;
+        element.weatherDegree = `${weatherData.main.temp} °C`;
+        element.weatherDescript = `${weatherData.weather[0].description}`;
         element.weatherIcon = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
     } catch (err) {
         console.warn(`Időjárás nem sikerült: ${cityName}`, err);

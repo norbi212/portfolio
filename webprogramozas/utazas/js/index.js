@@ -18,7 +18,7 @@ document.addEventListener("cityListReady",()=>{
             <p class="country">${list[i].country}</p>
             <div class="weather">
                 <img src="${list[i].weatherIcon}" class="icon">
-                <p class="weatherDesc">${list[i].weather}</p>
+                <p class="weatherDesc">${list[i].weatherDegree}, ${list[i].weatherDescript}</p>
             </div>
             <p class="currency">Hivatalos pénznem: ${list[i].currency}</p>
         `;
