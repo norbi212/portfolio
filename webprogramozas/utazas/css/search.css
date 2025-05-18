@@ -42,6 +42,8 @@
     width: 100%;
     height: 200px;
     border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
 }
 .card > h2{
     margin-top: 10px;
