@@ -1,6 +1,7 @@
 
 document.addEventListener("headerReady",()=>{
     document.querySelector(".pageTitle").innerText="Város keresése";
+    document.querySelector(".current").innerText="Város keresése";
 });
 document.addEventListener("cityListReady",()=>{
     let list = window.cityList;
