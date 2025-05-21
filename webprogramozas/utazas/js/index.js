@@ -25,3 +25,15 @@ document.addEventListener("cityListReady",()=>{
         document.querySelector(".cards").appendChild(box);
     }
 })
+function jump() {
+    let divTop = document.querySelector(".overflow");
+    if(window.innerWidth <= 700){
+        window.scrollTo({
+            top: (divTop.offsetTop), behavior: "smooth"
+        });
+    }else{
+        window.scrollTo({
+            top: (divTop.offsetTop)-80, behavior: "smooth"
+        });
+    }
+}
