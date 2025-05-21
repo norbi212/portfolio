@@ -88,6 +88,7 @@
     scrollbar-width: 10px;
     display: none;
     pointer-events: auto;
+    border-radius: 10px;
 }
 .blur{
     width: 100vw;
@@ -95,7 +96,7 @@
     display: none;
     position: fixed;
     align-items: center; justify-content: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     pointer-events: none;
     z-index: 999;
     top: 0;
