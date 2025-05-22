@@ -24,18 +24,15 @@ document.addEventListener("cityListReady",()=>{
                             <img src="${element.weatherIcon}" class="icon">
                             <p class="weatherDesc">${element.weatherDegree}</p>
                         </div>
-                        <p class="descript">${(element.description).slice(0,200)}...</p>
+                        <p class="descript">${(element.description).slice(0,200)}...</p> 
                         <button class="more">Bővebben</button>
-                    `;
+                    `; /* slice: elso 200 karakter */
 
                     box.addEventListener("click", () => {
                         document.querySelector(".result-placeholder").style.display = "block";
                         document.querySelector(".blur").style.display = "flex";
-                    
-                        // Itt kiegészítheted a .result-placeholder feltöltésével, pl.:
                         result(box.id);
                     });
-
                     document.querySelector(".searchResults").appendChild(box);
                 }
             });
@@ -50,7 +47,7 @@ async function result(city) {
     const blur = document.getElementById("blur");
     placeholder.innerHTML = html;
 
-    // Várj egy kicsit, hogy a DOM frissüljön
+    // várok a dom friss.ön
     await new Promise(wait => setTimeout(wait, 0));
 
     cityList.forEach(element => {

@@ -18,7 +18,7 @@ html{scroll-behavior: smooth;}
 .hero {
     width: 100vw;
     height: 85vh;
-    background-image: url('../img/20250514_065642609_iOS.png');
+    background-image: url('../img/london.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ html{scroll-behavior: smooth;}
 
 .menu-fixed-show {
     position: fixed;
-    top: 20px; /* ← itt volt eddig 0, most 20 legyen */
+    top: 20px;
     width: 80%;
     z-index: 999;
     transition: top 0.3s ease;
@@ -104,7 +104,7 @@ html{scroll-behavior: smooth;}
 
 .menu-fixed-hide {
     position: fixed;
-    top: -100px; /* el is tűnik */
+    top: -100px; 
     width: 80%;
     z-index: 999;
     transition: top 0.3s ease;

@@ -17,12 +17,12 @@ document.addEventListener("cityListReady", () => {
       const city = window.cityList[randomIndex];
 
       card.innerHTML = `
-        <img src="${city.images?.[0] || 'img/placeholder.jpg'}" alt="${city.name}">
+        <img src="${city.images[0]}">
         <h2>${city.name}</h2>
-        <p><strong>Ország:</strong> ${city.country}</p>
-        <p><strong>Időjárás:</strong> ${city.weatherDegree}, ${city.weatherDescript}</p>
+        <p>${city.country}</p>
+        <p  style="margin-top: 20px;"><strong>Aktuális időjárás:</strong> ${city.weatherDegree}, ${city.weatherDescript}</p>
         <p><strong>Pénznem:</strong> ${city.currency}</p>
-        <p>${city.description}</p>
+        <p  style="text-align: justify; margin: 20px;">${city.description}</p>
       `;
 
       card.classList.remove("hidden");

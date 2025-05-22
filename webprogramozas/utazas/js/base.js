@@ -1,4 +1,4 @@
-/* Get Cities - Json */
+/* Json -> (varosok) -> js */
 async function getCityList() {
     try {
         const response = await fetch('js/cities.json');
@@ -19,47 +19,39 @@ async function updateCityData(element) {
     const countryName = element.country;
 
     try {
-        const weatherRes = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(cityName)}&appid=${openWeatherKey}&units=metric&lang=hu`
-        );
+        const weatherRes = await fetch( `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(cityName)}&appid=${openWeatherKey}&units=metric&lang=hu`); /* encode... : linkkompatibilis alak */
         const weatherData = await weatherRes.json();
         element.weatherDegree = `${weatherData.main.temp} °C`;
         element.weatherDescript = `${weatherData.weather[0].description}`;
         element.weatherIcon = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
     } catch (err) {
-        console.warn(`Időjárás nem sikerült: ${cityName}`, err);
+        console.log(`Időjárás nem sikerült: ${cityName}`, err);
     }
 
     try {
-        const countryRes = await fetch(
-            `https://restcountries.com/v3.1/translation/${encodeURIComponent(countryName)}?lang=hu`
-        );
+        const countryRes = await fetch( `https://restcountries.com/v3.1/translation/${encodeURIComponent(countryName)}?lang=hu`);
         const countryData = await countryRes.json();
         const country = countryData[0];
         element.language = Object.values(country.languages).join(', ');
         element.currency = Object.values(country.currencies).map(c => c.name).join(', ');
     } catch (err) {
-        console.warn(`Országadat nem sikerült: ${countryName}`, err);
+        console.log(`Országadat nem sikerült: ${countryName}`, err);
     }
 
     try {
-        const wikiRes = await fetch(
-            `https://hu.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(cityName)}`
-        );
+        const wikiRes = await fetch( `https://hu.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(cityName)}`);
         const wikiData = await wikiRes.json();
         element.description = wikiData.extract;
     } catch (err) {
-        console.warn(`Wikipédia-leírás nem sikerült: ${cityName}`, err);
+        console.log(`Wikipédia-leírás nem sikerült: ${cityName}`, err);
     }
 
     try {
-        const imageRes = await fetch(
-            `https://api.unsplash.com/search/photos?query=${encodeURIComponent(cityName)}&client_id=${unsplashKey}&per_page=3`
-        );
+        const imageRes = await fetch( `https://api.unsplash.com/search/photos?query=${encodeURIComponent(cityName)}&client_id=${unsplashKey}&per_page=3`);
         const imageData = await imageRes.json();
         element.images = imageData.results.map(photo => photo.urls.regular);
     } catch (err) {
-        console.warn(`Kép lekérés nem sikerült: ${cityName}`, err);
+        console.log(`Kép lekérés nem sikerült: ${cityName}`, err);
     }
 }
 
@@ -122,7 +114,7 @@ async function main() {
         await updateCityData(element);
     }
 
-    window.cityList = cityList;
+    window.cityList = cityList; /* publik */
     document.dispatchEvent(new Event("cityListReady"));
 }
 
