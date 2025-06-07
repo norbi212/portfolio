@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "type": "Monstera deliciosa",
+    "image": "images/monstera.jpg",
+    "height": "80 cm"
+  },
+  {
+    "id": 2,
+    "type": "Ficus lyrata",
+    "image": "images/ficus.jpg",
+    "height": "120 cm"
+  },
+  {
+    "id": 3,
+    "type": "Aloe vera",
+    "image": "images/aloe.jpg",
+    "height": "30 cm"
+  }
+]
