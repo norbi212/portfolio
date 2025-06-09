@@ -8,12 +8,13 @@ const randomNotes = [
 ];
 
 function getIdFromUrl() {
-  const parts = window.location.pathname.split("/");
-  return parts[parts.length - 1].replace(".html", "");
+  const params = new URLSearchParams(window.location.search);
+  return params.get("id");
 }
 
 function loadPlantData() {
   const id = getIdFromUrl();
+  console.log("id: "+id)
 
   fetch("/plants.json")
     .then((res) => res.json())
