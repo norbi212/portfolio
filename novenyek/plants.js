@@ -1,4 +1,4 @@
-const randomNote = "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad provident fugiat minima? Maxime nulla, et excepturi est suscipit eaque atque?"
+const randomNote = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad provident fugiat minima? Maxime nulla, et excepturi est suscipit eaque atque?"
 
 function getIdFromUrl() {
   const parts = window.location.pathname.split("/");
