@@ -1,20 +1,178 @@
 [
   {
-    "id": 1,
-    "type": "Monstera deliciosa",
-    "image": "images/monstera.jpg",
-    "height": "80 cm"
+    "name": "Tephrocactus articulatus var. Papyracanthus",
+    "id": "912401",
+    "images": [
+      "img/IMG_7570.JPG"
+    ],
+    "megjegyzes": ""
   },
   {
-    "id": 2,
-    "type": "Ficus lyrata",
-    "image": "images/ficus.jpg",
-    "height": "120 cm"
+    "name": "Mammillaria compressa var. Bernalensis",
+    "id": "134501",
+    "images": [
+      "img/IMG_7571.JPG"
+    ],
+    "megjegyzes": ""
   },
   {
-    "id": 3,
-    "type": "Aloe vera",
-    "image": "images/aloe.jpg",
-    "height": "30 cm"
+    "name": "Echinopsis eyriesii (hybrid)",
+    "id": "413801",
+    "images": [
+      "img/IMG_7572.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Mammillaria senilis",
+    "id": "132701",
+    "images": [
+      "img/IMG_7574.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Mammillaria plumosa",
+    "id": "132301",
+    "images": [
+      "img/IMG_7575.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Echinopsis subdenudata",
+    "id": "419601",
+    "images": [
+      "img/IMG_7576.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Tephrocactus",
+    "id": "917901",
+    "images": [
+      "img/IMG_7577.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Euphorbia infausta",
+    "id": "218501",
+    "images": [
+      "img/IMG_7578.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Haworthia (glabrata)",
+    "id": "641401",
+    "images": [
+      "img/IMG_7579.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Ferocactus latispinus",
+    "id": "373901",
+    "images": [
+      "img/IMG_7580-2.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Haworthia fasciata",
+    "id": "648701",
+    "images": [
+      "img/IMG_7582.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Gasteria hybrid",
+    "id": "813501",
+    "images": [
+      "img/IMG_7583.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Crassula ovata 'gollum'",
+    "id": "939901",
+    "images": [
+      "img/IMG_7585.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Opuntia tuna f.",
+    "id": "796301",
+    "images": [
+      "img/IMG_7586.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Gymnocalycium michanovicii",
+    "id": "386701",
+    "images": [
+      "img/IMG_7587.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Lithops",
+    "id": "857901",
+    "images": [
+      "img/IMG_7588.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Gasteria sakura fuji variegata",
+    "id": "811001",
+    "images": [
+      "img/IMG_7589.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Lithops hallii",
+    "id": "853001",
+    "images": [
+      "img/IMG_7590.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Astrophytum capricorne",
+    "id": "996401",
+    "images": [
+      "img/IMG_7591.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Parodia leninghausii",
+    "id": "532901",
+    "images": [
+      "img/IMG_7592.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Mammillaria coryphantha",
+    "id": "133701",
+    "images": [
+      "img/IMG_7594.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Haworthia (glabrata)",
+    "id": "641402",
+    "images": [
+      "img/IMG_7595.JPG"
+    ],
+    "megjegyzes": ""
   }
 ]

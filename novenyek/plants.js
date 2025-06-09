@@ -1,26 +1,46 @@
-  // 1. Az URL utolsó részéből kiszedjük az ID-t
-  const urlParts = window.location.pathname.split('/');
-  const plantId = parseInt(urlParts[urlParts.length - 1]);
+const randomNotes = [
+  "Ez egy szépen fejlődő példány.",
+  "Tavaly ültettem át.",
+  "Nagyon kedveli a napfényt.",
+  "Télen bent tartom az ablakban.",
+  "Tövisei meglepően hosszúak.",
+  "Kevés vizet igényel."
+];
 
-  // 2. Betöltjük a JSON fájlt
-  fetch('plants.json')
-    .then(response => response.json())
-    .then(data => {
-      const plant = data.find(p => p.id === plantId);
+function getIdFromUrl() {
+  const parts = window.location.pathname.split("/");
+  return parts[parts.length - 1].replace(".html", "");
+}
 
+function loadPlantData() {
+  const id = getIdFromUrl();
+
+  fetch("plants.json")
+    .then((res) => res.json())
+    .then((plants) => {
+      const plant = plants.find((p) => p.id === id);
       if (!plant) {
-        document.getElementById('plant-container').innerHTML = `
-          <p style="color: red;">A(z) ${plantId} id növény nem található.</p>
-        `;
+        document.getElementById("plant-name").innerText = "Növény nem található.";
         return;
       }
 
-      document.getElementById('plant-image').src = plant.image;
-      document.getElementById('plant-image').alt = plant.type;
-      document.getElementById('plant-type').textContent = plant.type;
-      document.getElementById('plant-id').textContent = plant.id;
-      document.getElementById('plant-height').textContent = plant.height;
+      document.getElementById("plant-name").innerText = plant.name;
+      document.getElementById("plant-id").innerText = "ID: " + plant.id;
+      document.getElementById("plant-note").innerText =
+        plant.megjegyzes && plant.megjegyzes.trim() !== ""
+          ? plant.megjegyzes
+          : randomNotes[Math.floor(Math.random() * randomNotes.length)];
+
+      const imageContainer = document.getElementById("plant-images");
+      plant.images.forEach((src) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = plant.name;
+        imageContainer.appendChild(img);
+      });
     })
-    .catch(error => {
-      console.error('Error loading plant data:', error);
+    .catch((err) => {
+      console.error("Hiba a JSON betöltésekor:", err);
     });
+}
+window.addEventListener("DOMContentLoaded", loadPlantData);
