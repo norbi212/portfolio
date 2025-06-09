@@ -28,6 +28,7 @@
       overflow: hidden;
       transition: transform 0.2s;
       text-align: center;
+      cursor: pointer;
     }
     .card:hover {
       transform: scale(1.02);
@@ -60,11 +61,12 @@
       .then(response => response.json())
       .then(plants => {
         const container = document.getElementById('plant-container');
-        container.innerHTML = ''; // Clear loading text
+        container.innerHTML = ''; // Remove loading text
 
         plants.forEach(plant => {
           const card = document.createElement('div');
           card.className = 'card';
+          card.setAttribute('data-id', plant.id);
 
           const img = document.createElement('img');
           img.src = plant.images[0] || '';
@@ -88,6 +90,12 @@
 
           card.appendChild(img);
           card.appendChild(content);
+
+          // kattintás esemény hozzáadása
+          card.addEventListener('click', () => {
+            const id = card.getAttribute('data-id');
+            window.location.href = `https://norbiv.com/novenyek/selected/${id}`;
+          });
 
           container.appendChild(card);
         });
