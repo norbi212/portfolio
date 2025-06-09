@@ -1,11 +1,4 @@
-const randomNotes = [
-  "Ez egy szépen fejlődő példány.",
-  "Tavaly ültettem át.",
-  "Nagyon kedveli a napfényt.",
-  "Télen bent tartom az ablakban.",
-  "Tövisei meglepően hosszúak.",
-  "Kevés vizet igényel."
-];
+const randomNote = "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad provident fugiat minima? Maxime nulla, et excepturi est suscipit eaque atque?"
 
 function getIdFromUrl() {
   const parts = window.location.pathname.split("/");
@@ -27,10 +20,7 @@ function loadPlantData() {
 
       document.getElementById("plant-name").innerText = plant.name;
       document.getElementById("plant-id").innerText = "ID: " + plant.id;
-      document.getElementById("plant-note").innerText =
-        plant.megjegyzes && plant.megjegyzes.trim() !== ""
-          ? plant.megjegyzes
-          : randomNotes[Math.floor(Math.random() * randomNotes.length)];
+      document.getElementById("plant-note").innerText = randomNote;
 
       const imageContainer = document.getElementById("plant-images");
       plant.images.forEach((src) => {
