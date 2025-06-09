@@ -15,7 +15,7 @@ function getIdFromUrl() {
 function loadPlantData() {
   const id = getIdFromUrl();
 
-  fetch("plants.json")
+  fetch("/plants.json")
     .then((res) => res.json())
     .then((plants) => {
       const plant = plants.find((p) => p.id === id);
