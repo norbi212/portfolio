@@ -8,8 +8,8 @@ const randomNotes = [
 ];
 
 function getIdFromUrl() {
-  const params = new URLSearchParams(window.location.search);
-  return params.get("id");
+  const parts = window.location.pathname.split("/");
+  return parts[parts.length - 1];
 }
 
 function loadPlantData() {
