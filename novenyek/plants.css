@@ -10,7 +10,7 @@ body {
 }
 .header{
   background-color: #325649;
-  width: 100%;
+  width: calc(100vw - 1rem);
   text-align: center;
   color: white;
   font-weight: bold;
