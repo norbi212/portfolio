@@ -1,9 +1,10 @@
 body {
       font-family: sans-serif;
       background: #f7f7f7;
+      padding: 0;
 }
 .header{
-  background-color: #325649;
+  background-color: #77fccb;
   width: 100vw;
   text-align: center;
   color: white;
