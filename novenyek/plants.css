@@ -12,7 +12,8 @@ body {
   padding: 20px;
   border-radius: 0 0 10px 10px;
   margin-bottom: 20px;
-  transform: translateZ(-1rem);
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 a{
   text-decoration: none;
