@@ -11,23 +11,27 @@ body {
   padding: 20px;
   border-radius: 0 0 10px 10px;
 }
-    h1 {
-      font-size: 1.5rem;
-      margin-bottom: 0.2rem;
-    }
-    .id {
-      color: #666;
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-    .note {
-      margin-bottom: 1.5rem;
-      font-style: italic;
-      color: #444;
-    }
-    .image-container img {
-      width: 100%;
-      max-width: 100%;
-      border-radius: 0.5rem;
-      margin-bottom: 1rem;
-    }
+a{
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+.id {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.note {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: #444;
+}
+.image-container img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}

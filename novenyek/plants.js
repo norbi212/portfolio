@@ -1,5 +1,3 @@
-const randomNote = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad provident fugiat minima? Maxime nulla, et excepturi est suscipit eaque atque?"
-
 function getIdFromUrl() {
   const parts = window.location.pathname.split("/");
   return parts[parts.length - 1];
@@ -20,7 +18,7 @@ function loadPlantData() {
 
       document.getElementById("plant-name").innerText = plant.name;
       document.getElementById("plant-id").innerText = "ID: " + plant.id;
-      document.getElementById("plant-note").innerText = randomNote;
+      document.getElementById("plant-note").innerText = plant.description;
 
       const imageContainer = document.getElementById("plant-images");
       plant.images.forEach((src) => {
