@@ -10,16 +10,17 @@ body {
 }
 .header{
   background-color: #325649;
-  width: calc(100vw - 1rem);
+  width: 100%;
   text-align: center;
   color: white;
   font-weight: bold;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 0 0 10px 10px;
   margin-bottom: 20px;
 }
 .content{
-  width: 100%;
+
   padding: 1rem;
 }
 a{
