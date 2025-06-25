@@ -7,12 +7,20 @@
   <link rel="stylesheet" href="/novenyek/plants.css" />
 </head>
 <body>
-  <a href="/novenyek/index.html"></a><div class="header" id="header">All my plants</div></a>
-  <h1 id="plant-name">Loading...</h1>
-  <div class="id" id="plant-id"></div>
-  <div class="note" id="plant-note"></div>
-  <div class="image-container" id="plant-images"></div>
+  <div class="header" id="header">All my plants</div>
+  <div class="content">
+    <h1 id="plant-name">Loading...</h1>
+    <div class="id" id="plant-id"></div>
+    <div class="note" id="plant-note"></div>
+    <div class="image-container" id="plant-images"></div>
+  </div>
+  
 
   <script src="/novenyek/plants.js"></script>
+  <script>
+    document.getElementById("heard").addEventListener("click", ()=>{
+      window.location.href='https://norbiv.com/novenyek';
+    });
+  </script>
 </body>
 </html>

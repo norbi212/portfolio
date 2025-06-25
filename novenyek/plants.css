@@ -1,6 +1,5 @@
 body {
       font-family: sans-serif;
-      padding: 1rem;
       background: #f7f7f7;
 }
 .header{
@@ -12,8 +11,10 @@ body {
   padding: 20px;
   border-radius: 0 0 10px 10px;
   margin-bottom: 20px;
-  margin-left: -1rem;
-  margin-right: -1rem;
+}
+.content{
+  width: 100vw;
+  padding: 1rem;
 }
 a{
   text-decoration: none;
