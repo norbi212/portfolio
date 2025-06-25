@@ -43,7 +43,8 @@
     "name": "Echinopsis subdenudata",
     "id": "419601",
     "images": [
-      "/novenyek/img/IMG_7576.JPG"
+      "/novenyek/img/IMG_7576.JPG",
+      "/novenyek/img/IMG_7576_2.JPG"
     ],
     "megjegyzes": ""
   },
@@ -67,7 +68,8 @@
     "name": "Haworthia (glabrata)",
     "id": "641401",
     "images": [
-      "/novenyek/img/IMG_7579.JPG"
+      "/novenyek/img/IMG_7579.JPG",
+      "/novenyek/img/IMG_7579_2.JPG"
     ],
     "megjegyzes": ""
   },
@@ -140,7 +142,8 @@
     "name": "Lithops hallii",
     "id": "853001",
     "images": [
-      "/novenyek/img/IMG_7590.JPG"
+      "/novenyek/img/IMG_7590.JPG",
+      "/novenyek/img/IMG_7590_2.JPG"
     ],
     "megjegyzes": ""
   },
@@ -148,7 +151,8 @@
     "name": "Astrophytum capricorne",
     "id": "996401",
     "images": [
-      "/novenyek/img/IMG_7591.JPG"
+      "/novenyek/img/IMG_7591.JPG",
+      "/novenyek/img/IMG_7591_2.JPG"
     ],
     "megjegyzes": ""
   },
@@ -173,6 +177,34 @@
     "id": "641402",
     "images": [
       "/novenyek/img/IMG_7595.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Echinopsis oxygona",
+    "id": "540102",
+    "images": [
+      "/novenyek/img/IMG_7593.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Echinopsis oxygona",
+    "id": "540101",
+    "images": [
+      "/novenyek/img/IMG_1670.JPG",
+      "/novenyek/img/IMG_1670_2.JPG",
+      "/novenyek/img/IMG_1670_3.JPG"
+    ],
+    "megjegyzes": ""
+  },
+  {
+    "name": "Chamaecereus silvestrii",
+    "id": "550101",
+    "images": [
+      "/novenyek/img/IMG_1733.JPG",
+      "/novenyek/img/IMG_1733_2.JPG",
+      "/novenyek/img/IMG_1733_3.JPG"
     ],
     "megjegyzes": ""
   }
