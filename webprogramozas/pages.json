@@ -3,7 +3,8 @@
         "id":"vilagvarosai",
         "img":"img/vilagvarosai.png",
         "title":"Világ városai",
-        "description":"iskolai projekt (2024-25)<br>több méretű képernyőre is optimalizálva -Folyamatban",
+        "description":"iskolai projekt (2024-25)<br>több méretű képernyőre is optimalizálva",
+        "desc2":"Online adatbázisokból tölt le képeket, élő adatokat, stb... (RestAPI)",
         "link":"utazas/index.html"
     },
     {
@@ -25,6 +26,7 @@
         "img":"img/macbook.png",
         "title":"MacBook Pro",
         "description":"iskolai projekt (2023-24)<br>többnyire nagy képernyőre optimalizálva",
+        "desc2":"Többen dolgoztunk rajta, itt csak az általam készített aloldalak érhetőek el",
         "link":"macbook/fooldal.html"
     },
     {
@@ -32,6 +34,7 @@
         "img":"img/fank.png",
         "title":"PoFank Fánkozó",
         "description":"iskolai projekt (2023-24)<br>több méretű képernyőre is optimalizálva",
+        "desc2":"Többen dolgoztunk rajta, itt csak az általam készített aloldalak érhetőek el",
         "link":"pofank/miertmi.html"
     },
     {
@@ -39,6 +42,7 @@
         "img":"img/szotar.png",
         "title":"Képszótár",
         "description":"iskolai projekt (2023-24)<br>több méretű képernyőre is optimalizálva",
+        "desc2":"Interaktív elemek, eseménykezelés első használata",
         "link":"kepszotar/index.html"
     }
 ]
