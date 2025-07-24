@@ -21,6 +21,7 @@ async function addDataToHTML(){
             <img src="${item.img}" alt="">
             <h4>${item.title}</h4>
             <p>${item.description}</p>
+            <p>${item.desc2}</p>
         `;
     contentDiv.appendChild(newPage);
     })
