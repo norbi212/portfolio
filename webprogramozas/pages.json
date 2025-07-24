@@ -12,6 +12,7 @@
         "img":"img/56forr.png",
         "title":"'56-os forradalom",
         "description":"iskolai projekt (2024-25)<br>többnyire nagy képernyőre optimalizálva",
+        "desc2":"",
         "link":"56forr/index.html"
     },
     {
@@ -19,6 +20,7 @@
         "img":"img/arad.png",
         "title":"Aradi vértanúk",
         "description":"iskolai projekt (2024-25)<br>többnyire nagy képernyőre optimalizálva",
+        "desc2":"",
         "link":"arad/index.html"
     },
     {
